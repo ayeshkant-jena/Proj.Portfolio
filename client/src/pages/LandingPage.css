@@ -1,0 +1,60 @@
+
+.section{
+    display: flex;
+    height: 90vh;
+    font-family: 'Nunito';
+    margin: 0px 50px;
+    /* background-color: antiquewhite; */
+}
+
+.herotext{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    align-items: left;
+}
+h1{
+    margin: 0;
+    font-size: 4.5rem;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(222, 0, 85);
+}
+h2{
+    margin: 0;
+}
+p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(57, 57, 57);
+}
+
+button{
+    margin-top: 20px;
+    color: rgb(222, 0, 85);
+    font-size: 20px;
+    font-weight: 650;
+    background-color: white;
+    box-shadow:0 0 5px 2px rgba(0, 0, 0, 0.2);
+    transform: border 0.3s ease;
+}
+button:hover{
+    border: 1px solid  rgb(222, 0, 85);
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.image img{
+    border-radius: 50px 50px 50px 50px;
+    width: 700px;
+    height: 550px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}

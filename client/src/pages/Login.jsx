@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import './Login.css'
 
 const Login = () => {
     const [isRegister, setIsRegister] = useState(false); // Toggle between Login and Register
@@ -50,53 +51,21 @@ const Login = () => {
     };
 
     return (
-        <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px', textAlign: 'center' }}>
-            <h1>{isRegister ? 'Register' : 'Login'}</h1>
+        <div className='logindiv'>
             <form onSubmit={handleSubmit}>
+            <h1 className='register'>{isRegister ? 'Register' : 'Login'}</h1>
                 {isRegister && (
-                    <input
-                        type="text"
-                        name="username"
-                        placeholder="Username"
-                        value={formData.username}
-                        onChange={handleInputChange}
-                        required
-                        style={{ display: 'block', margin: '10px auto', padding: '10px' }}
+                    <input type="text" name="username" placeholder="Username" value={formData.username} onChange={handleInputChange} required
                     />
                 )}
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    style={{ display: 'block', margin: '10px auto', padding: '10px' }}
+                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} required
                 />
-                <input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                    value={formData.password}
-                    onChange={handleInputChange}
-                    required
-                    style={{ display: 'block', margin: '10px auto', padding: '10px' }}
+                <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleInputChange} required
                 />
-                <button
-                    type="submit"
-                    style={{
-                        background: '#007bff',
-                        color: '#fff',
-                        padding: '10px 20px',
-                        border: 'none',
-                        borderRadius: '5px',
-                        cursor: 'pointer',
-                    }}
-                >
+                <button type="submit">
                     {isRegister ? 'Register' : 'Login'}
                 </button>
-            </form>
-            <p style={{ marginTop: '20px', cursor: 'pointer', color: '#007bff' }}>
+            <p>
                 {isRegister ? (
                     <>
                         Already have an account?{' '}
@@ -109,6 +78,7 @@ const Login = () => {
                     </>
                 )}
             </p>
+            </form>
         </div>
     );
 };

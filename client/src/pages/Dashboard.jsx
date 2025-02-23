@@ -40,7 +40,7 @@ const Dashboard = () => {
     };
 
     return (
-        <div>
+        <div className='container'>
             <h1>Portfolio Dashboard</h1>
             <h1>Welcome, {username}!</h1>
             <div>

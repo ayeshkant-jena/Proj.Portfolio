@@ -1,0 +1,33 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: auto;
+    margin: 0px 50px;
+    flex-direction: row;
+}
+
+.line{
+    display: flex;
+    height: 1px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.loginbtn{
+    margin: 0;
+    font-size:22px;
+    background-color: rgb(222, 0, 85);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.loginbtn:hover{
+    color:  rgb(222, 0, 85);
+    background-color: white;
+}
